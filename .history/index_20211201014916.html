@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="calculator">
+      <div class="view">
+        <div id="history">0</div>
+        <div id="result">0</div>
+      </div>
+      <div class="buttons">
+        <div id="effect"></div>
+        <button class="extra" id="reset" onclick="clicked('C')">C</button>
+        <button class="extra" id="moreless" onclick="clicked('+-')">+/-</button>
+        <button class="extra" id="percent" onclick="clicked('%')">%</button>
+        <button class="operator" id="division" onclick="clicked('/')">÷</button>
+        <button class="number" id="seven" onclick="clicked('7')">7</button>
+        <button class="number" id="eight" onclick="clicked('8')">8</button>
+        <button class="number" id="nine" onclick="clicked('9')">9</button>
+        <button class="operator" id="multiply" onclick="clicked('*')">×</button>
+        <button class="number" id="four" onclick="clicked('4')">4</button>
+        <button class="number" id="five" onclick="clicked('5')">5</button>
+        <button class="number" id="six" onclick="clicked('6')">6</button>
+        <button class="operator" id="less" onclick="clicked('-')">-</button>
+        <button class="number" id="one" onclick="clicked('1')">1</button>
+        <button class="number" id="two" onclick="clicked('2')">2</button>
+        <button class="number" id="three" onclick="clicked('3')">3</button>
+        <button class="operator" id="plus" onclick="clicked('+')">+</button>
+        <button class="number" id="zero" onclick="clicked('0')">0</button>
+        <button class="extra" id="dot" onclick="clicked('.')">.</button>
+        <button class="equals" id="equals" onclick="clicked('=')">=</button>
+      </div>
+    </div>
+    <div class="frufrus">
+      <div class="small-square"></div>
+      <div class="square"></div>
+      <div class="small-circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="dots"></div>
+    <div class="dots1"></div>
+  </main>
+</body>
+<script src="./script.js"></script>
+</html>

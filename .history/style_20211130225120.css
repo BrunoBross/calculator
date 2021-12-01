@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.calculator{
+  background-color: #232222;
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  height: 70vh;
+}
+
+.view{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.buttons{
+  background-color: #F1F1F4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vh;
+}
+
+.buttons > button{
+  border: 2px solid black;
+  height: 7vh;
+  width: 7vw;
+}

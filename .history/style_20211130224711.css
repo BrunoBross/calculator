@@ -1,0 +1,20 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.calculator{
+  background-color: #232222;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 70vh;
+}
+
+.view{
+  display: flex;
+}
+
+.buttons{
+  background-color: #F1F1F4;
+}

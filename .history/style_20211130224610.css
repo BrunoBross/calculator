@@ -1,0 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.calculator{
+  background-color: #232222;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
