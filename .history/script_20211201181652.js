@@ -32,6 +32,7 @@ function clicked(buttonClicked=String){
       operation += buttonClicked
       viewResult.innerHTML = operation
     }
+    
   // PEGAR O OPERADOR
   }else{
     if(!jahAdicionou){

@@ -2,6 +2,7 @@ const viewResult = document.querySelector('#result')
 const viewHistory = document.querySelector('#history')
 
 let operation = ''
+let history = ''
 let jahAdicionou = false
 
 function clicked(buttonClicked=String){
@@ -23,15 +24,12 @@ function clicked(buttonClicked=String){
     jahAdicionou = false
     operation = '0'
     viewResult.innerHTML = operation
-    viewHistory.innerHTML = operation
     operation = ''
   // PEGAR O NUMERO
   } else if(9 >= buttonClicked >= 0){
-    if(!(buttonClicked == '0' && operation.length == 0)){
-      jahAdicionou = false
-      operation += buttonClicked
-      viewResult.innerHTML = operation
-    }
+    jahAdicionou = false
+    operation += buttonClicked
+    viewResult.innerHTML = operation
   // PEGAR O OPERADOR
   }else{
     if(!jahAdicionou){

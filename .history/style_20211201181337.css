@@ -30,11 +30,12 @@ main{
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
+
   height: 400px;
   margin-right: 45px;
   margin-left: 45px;
   padding-bottom: 15px;
-  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .view > #result{

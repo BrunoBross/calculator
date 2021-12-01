@@ -2,42 +2,34 @@ const viewResult = document.querySelector('#result')
 const viewHistory = document.querySelector('#history')
 
 let operation = ''
-let jahAdicionou = false
+let history = ''
 
 function clicked(buttonClicked=String){
   
   // FAZER A SOMA FINAL
   if(buttonClicked == '='){
-    jahAdicionou = false
     operation = eval(operation)
-    console.log(operation)
     viewResult.innerHTML = operation
-    viewHistory.innerHTML = operation
   // INVERTER SINAL
   }else if(buttonClicked  == '+-'){
-    jahAdicionou = false
     operation *= -1
     viewResult.innerHTML = operation
   // ZERAR CALCULADORA
   }else if(buttonClicked == 'C'){
-    jahAdicionou = false
     operation = '0'
     viewResult.innerHTML = operation
-    viewHistory.innerHTML = operation
     operation = ''
-  // PEGAR O NUMERO
-  } else if(9 >= buttonClicked >= 0){
-    if(!(buttonClicked == '0' && operation.length == 0)){
-      jahAdicionou = false
-      operation += buttonClicked
-      viewResult.innerHTML = operation
-    }
   // PEGAR O OPERADOR
-  }else{
-    if(!jahAdicionou){
+  }else if(buttonClicked == '+' || buttonClicked == '-' || buttonClicked == '*' || buttonClicked == '/'){
+    if(operation.endsWith('+') || operation.endsWith('-') || operation.endsWith('*') || operation.endsWith('/')){
+      viewResult.innerHTML = operation
+    }else{
       operation += buttonClicked
       viewResult.innerHTML = operation
-      jahAdicionou = true
     }
+  // PEGAR O NUMERO DIGITADO
+  }else if(9 >= buttonClicked >= 0){
+    operation += buttonClicked
+    viewResult.innerHTML = operation
   }
 }

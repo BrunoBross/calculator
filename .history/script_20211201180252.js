@@ -27,11 +27,9 @@ function clicked(buttonClicked=String){
     operation = ''
   // PEGAR O NUMERO
   } else if(9 >= buttonClicked >= 0){
-    if(!(buttonClicked == '0' && operation.length == 0)){
-      jahAdicionou = false
-      operation += buttonClicked
-      viewResult.innerHTML = operation
-    }
+    jahAdicionou = false
+    operation += buttonClicked
+    viewResult.innerHTML = operation
   // PEGAR O OPERADOR
   }else{
     if(!jahAdicionou){
